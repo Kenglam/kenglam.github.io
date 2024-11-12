@@ -30,7 +30,7 @@ h2{
     font-family: "Handlee",Times, sans-serif;
     font-weight: 600;
     font-style: italic;
-    text-indent: 10%;
+    text-indent: 10% !important;
     text-align: center;
     letter-spacing: 5px;
     line-height: 124%;
@@ -55,3 +55,14 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
 }
+
+div{
+    padding: 25px 50px 75px 100px;
+}
+
+@media (max-width: 576px) {
+    body{
+        background-color: aqua;
+    }
+}
+    
