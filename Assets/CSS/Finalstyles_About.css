@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* Header */
+.header-bar {
+    background-color: #fee8a9; /* Light Pink */
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure the content spans full width */
+}
+
+/* Left Navigation Links */
+.nav-left {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover {
+    color: #ea7c6c; /* Coral hover effect */
+}
+
+/* Right Content (Title and Subtitle) */
+.nav-right {
+    text-align: right; /* Align text to the right */
+}
+
+.nav-right .site-title {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+.nav-right .subtitle {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section Styling */
+.content-section {
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 700px;
+    background-color: #f7cdc6; /* Light Pink */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+    text-align: center; /* Center-align headings */
+}
+
+.content-section p {
+    font-size: 0.5rem;
+    line-height: 1;
+    color: #555;
+}
+
+/* Characteristics List */
+.content-section ul {
+    list-style-type: disc;
+    margin: 0.5em 1em; /* Indent list items */
+    padding: 0;
+}
+
+.content-section ul li {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+/* Education Styling */
+.content-section ul li strong {
+    font-size: 1em;
+    color: #333; /* Emphasize degree or course */
+}
+
+.content-section ul li em {
+    font-size: 0.8rem;
+    color: #777; /* Subtle styling for years */
+}
+
+/* Footer */
+.footer-bar {
+    background-color: #fee8a9; 
+    color: #0e0c0c; /* White text */
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.footer-bar p {
+    margin: 0.5em 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.social-links {
+    margin-top: 0.5em;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Add a hover fade effect */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the height of the body to fill the entire viewport */
+    margin: 0; /* Remove default margins */
+}
+
+main {
+    flex: 1; /* This makes the main content take up all available space */
+}
+
+/* General Section Styling */
+.content-section {
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+    font-size: 0.9rem; /* Apply smaller font globally */
+    line-height: 1.5;
+}
+
+/* Brief Summary Section */
+.summary-section {
+    background-color: #e7a8a0; /* Light Pink */
+    color: #333; /* Text color */
+}
+
+/* Characteristics Section */
+.characteristics-section {
+    background-color: #c4c58e; /* Light Blue */
+    color: #333; /* Text color */
+    padding: 1.2rem;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #f7cdc6; /* Light Yellow */
+    color: #333; /* Text color */
+    padding: 1rem;
+}
+
+/* Section Headings */
+.content-section h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Paragraphs */
+.content-section p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Lists */
+.content-section ul {
+    list-style-type: disc;
+    margin: 1em 2em;
+    padding: 0;
+}
+
+/* Brief Summary Section */
+.summary-section {
+    background-color: #b5edf1; /* Light Pink */
+    color: #333; /* Text color */
+    font-family: 'Roboto Slab', serif; /* Optional: Change to another font if needed */
+    font-size: 0.8rem; /* Adjust the size of the text */
+    line-height: 1.6; /* Adjust spacing between lines */
+    text-align: justify; /* Optional: Align the text for better readability */
+    padding: 1.2rem; /* Add padding for spacing */
+}
+
+/* Heading Inside Brief Summary */
+.summary-section h2 {
+    font-size: 1rem; /* Adjust the font size for the heading */
+    text-align: center; /* Center-align the heading */
+    color: #222; /* Adjust heading color */
+    font-weight: 700; /* Make the heading bold */
+}
+
+/* Paragraph Inside Brief Summary */
+.summary-section p {
+    font-size: 0.8rem; /* Adjust paragraph font size */
+    line-height: 1.8; /* Adjust line spacing for readability */
+    color: #444; /* Adjust text color */
+    margin-top: 1rem; /* Add spacing between the heading and paragraph */
+}
