@@ -8,7 +8,7 @@
 
 /* Header */
 .header-bar {
-    background-color: #fee8a9; /* Light Pink */
+    background-color: #fea9a9; /* Light Pink */
     display: flex;
     justify-content: space-between; /* Align left and right sections */
     align-items: center;
@@ -58,7 +58,7 @@
 
 /* Footer */
 .footer-bar {
-    background-color: #fee8a9; 
+    background-color: #fea9a9; 
     color: #0e0c0c; /* White text */
     text-align: center;
     padding: 1em 0;
@@ -106,7 +106,7 @@
 .content-container {
     width: 40%; /* Adjust width to fit the background boxes */
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    background-color: rgb(255, 255, 255); /* White with slight transparency */
     border-radius: 15px; /* Rounded corners for aesthetic */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     text-align: left;
@@ -159,3 +159,95 @@
     background-color: #e2712f; /* Darker purple */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Date Styling */
+.timeline-date {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #cc952f;
+    background-color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Content Styling */
+.timeline-content {
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Arrow Indicator */
+.timeline-content:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #f9f9f9; /* Same as background color */
+}
+
+/* Timeline Vertical Line */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #0f0f0e; /* Accent color */
+}
+
+.timeline-header {
+    background-color: #ffffff; 
+    color: #333; /* Text color */
+    padding: 0.5rem 1rem; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Keeps the background tight around the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    margin: 0 auto; /* Centers the element horizontally */
+    text-align: center; /* Centers the text inside the element */
+}
+
+.skills-header {
+    background-color: #ffffff; 
+    color: #333; /* Text color */
+    padding: 0.5rem 1rem; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Keeps the background tight around the text */
+    margin: 13px auto; /* Centers the element horizontally */
+    text-align: center; /* Centers the text inside */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.progress-bar {
+    font-weight: bold; /* Bold percentage text */
+    color: #fff; /* White text inside the bar */
+    text-align: center; /* Centers the percentage text */
+}
+
