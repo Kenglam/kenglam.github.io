@@ -1,48 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
 }
 
-
 /* Header */
 .header-bar {
-    background-color: #fee8a9; /* Light Pink */
+    background-color: #fee8a9;
     display: flex;
-    justify-content: space-between; /* Align left and right sections */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     border-bottom: 1px solid #ddd;
 }
 
-/* Navigation Container */
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensure the content spans full width */
+    width: 100%;
 }
 
-/* Left Navigation Links */
 .nav-left {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px;
 }
 
 .nav-left a {
     text-decoration: none;
-    color: #333; /* Text color */
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-left a:hover {
-    color: #ea7c6c; /* Coral hover effect */
+    color: #ea7c6c;
 }
 
-/* Right Content (Title and Subtitle) */
 .nav-right {
-    text-align: right; /* Align text to the right */
+    text-align: right;
 }
 
 .nav-right .site-title {
@@ -58,14 +54,11 @@
 
 /* Footer */
 .footer-bar {
-    background-color: #fee8a9; 
-    color: #0e0c0c; /* White text */
+    background-color: #fee8a9;
+    color: #0e0c0c;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
-    font-family: 'Roboto Slab', serif;
 }
 
 .footer-bar p {
@@ -78,22 +71,17 @@
     margin-top: 0.5em;
 }
 
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-links img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Add a hover fade effect */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
-
 
 /* General Container Styling */
 .content-container {
@@ -128,10 +116,11 @@ form button {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #e2712f;
+    transform: scale(1.05);
 }
 
 /* Contact Info Styling */
@@ -146,7 +135,6 @@ form button:hover {
     margin: 0.5rem 0;
 }
 
-/* CV Download Button */
 .cv-download-button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -157,50 +145,34 @@ form button:hover {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cv-download-button:hover {
-    background-color: #e2712f;
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Social Media Links */
-.social-links img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
     transition: transform 0.3s ease;
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
+.cv-download-button:hover {
+    transform: scale(1.05);
 }
 
-/* Adjust size for "Contact Me" */
+/* Contact Page Headings */
 #contact-page h2 {
-    font-size: 2.5rem; /* Larger font size for Contact Me */
-    color: #e2712f; /* Optional: Adjust color */
-    text-align: center; /* Optional: Center align */
-    margin-bottom: 1rem; /* Add spacing below */
+    font-size: 2.5rem;
+    color: #e2712f;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* Adjust size for "Send Me a Message" */
 #contact-form h3 {
-    font-size: 2rem; /* Slightly smaller than Contact Me */
-    color: #e2712f; /* Optional: Adjust color */
-    text-align: center; /* Optional: Align to the left */
-    margin-bottom: 0.5rem; /* Add spacing below */
+    font-size: 2rem;
+    color: #e2712f;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
+/* Image Styling */
 .project-image {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: auto; /* Adjust as needed */
-    width: 200px;
-    max-width: 340px; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
