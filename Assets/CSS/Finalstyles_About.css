@@ -68,16 +68,16 @@
 }
 
 .content-section h2 {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
-    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #0f0e0e;
     text-align: center; /* Center-align headings */
 }
 
 .content-section p {
-    font-size: 0.5rem;
+    font-size: 1rem;
     line-height: 1;
-    color: #555;
+    color: #030303;
 }
 
 /* Characteristics List */
@@ -88,20 +88,20 @@
 }
 
 .content-section ul li {
-    font-size: 0.8rem;
-    color: #555;
+    font-size: 1em;
+    color: #0e0808;
     margin-bottom: 0.5em;
 }
 
 /* Education Styling */
 .content-section ul li strong {
     font-size: 1em;
-    color: #333; /* Emphasize degree or course */
+    color: #070606; /* Emphasize degree or course */
 }
 
 .content-section ul li em {
-    font-size: 0.8rem;
-    color: #777; /* Subtle styling for years */
+    font-size: 1rem;
+    color: #070606; /* Subtle styling for years */
 }
 
 /* Footer */
@@ -163,58 +163,113 @@ main {
 }
 
 .content-section {
-    font-size: 0.9rem; /* Apply smaller font globally */
+    font-size: 1rem; /* Apply smaller font globally */
     line-height: 1.5;
 }
 
 /* Brief Summary Section */
 .summary-section {
-    background-color: #e7a8a0; /* Light Pink */
-    color: #333; /* Text color */
+    background-color: #ffffff; /* Light Pink */
+    color: #0c0909; /* Text color */
 }
 
 /* Characteristics Section */
 .characteristics-section {
-    background-color: #c4c58e; /* Light Blue */
-    color: #333; /* Text color */
+    background-color: #ffffff; /* Light Blue */
+    color: #130606; /* Text color */
     padding: 1.2rem;
 }
 
+
 /* Education Section */
-.education-section {
-    background-color: #f7cdc6; /* Light Yellow */
-    color: #333; /* Text color */
-    padding: 1rem;
+
+#education {
+    margin: 2rem auto;
 }
 
-/* Section Headings */
-.content-section h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+#education h2 {
+    font-weight: bold;
+    color: #333; /* Darker heading color */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 2rem; /* Spacing below heading */
 }
 
-/* Paragraphs */
-.content-section p {
-    font-family: 'Roboto Slab', serif;
+/* Card Styling */
+#education .card {
+    border-radius: 10px; /* Rounded corners for the cards */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    height: 100%; /* Make all cards equal height */
+}
+
+#education .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card Titles */
+#education .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ce9d43; /* Accent color for titles */
+    margin-bottom: 0.5rem;
+}
+
+/* Card Text */
+#education .card-text {
     font-size: 1rem;
-    line-height: 1.6;
+    color: #555; /* Muted text color */
+    margin-bottom: 0.3rem;
 }
 
-/* Lists */
-.content-section ul {
-    list-style-type: disc;
-    margin: 1em 2em;
-    padding: 0;
+/* Text Muted Styling */
+#education .text-muted {
+    font-size: 1rem;
+    color: #777; /* Lighter text color for dates */
 }
+
+/* Row and Column Spacing */
+#education .row {
+    gap: 1rem; /* Adds space between columns */
+}
+
+#education .row {
+    display: flex; /* Ensures all cards stay in the same row */
+    flex-wrap: nowrap; /* Prevents cards from wrapping to a new line */
+    gap: 1.5rem; /* Adds spacing between cards */
+    justify-content: center; /* Centers the cards horizontally */
+}
+
+/* Card Styling */
+#education .card {
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background */
+    height: 100%; /* Ensures all cards have equal height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover */
+}
+
+#education .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Responsive Columns */
+@media (max-width: 768px) {
+    #education .col-md-4 {
+        flex: 0 0 100%; /* Stack columns vertically on smaller screens */
+        max-width: 100%;
+    }
+}
+
 
 /* Brief Summary Section */
 .summary-section {
-    background-color: #b5edf1; /* Light Pink */
+    background-color: #ffffff; /* Light Pink */
     color: #333; /* Text color */
     font-family: 'Roboto Slab', serif; /* Optional: Change to another font if needed */
-    font-size: 0.8rem; /* Adjust the size of the text */
+    font-size: 1rem; /* Adjust the size of the text */
     line-height: 1.6; /* Adjust spacing between lines */
     text-align: justify; /* Optional: Align the text for better readability */
     padding: 1.2rem; /* Add padding for spacing */
@@ -230,7 +285,7 @@ main {
 
 /* Paragraph Inside Brief Summary */
 .summary-section p {
-    font-size: 0.8rem; /* Adjust paragraph font size */
+    font-size: 1rem; /* Adjust paragraph font size */
     line-height: 1.8; /* Adjust line spacing for readability */
     color: #444; /* Adjust text color */
     margin-top: 1rem; /* Add spacing between the heading and paragraph */
