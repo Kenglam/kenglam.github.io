@@ -1,143 +1,70 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
+    font-size: 1rem; /* Global font size */
 }
-
 
 /* Header */
 .header-bar {
-    background-color: #fee8a9; /* Light Pink */
+    background-color: #fee8a9;
     display: flex;
-    justify-content: space-between; /* Align left and right sections */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     border-bottom: 1px solid #ddd;
 }
 
-/* Navigation Container */
 .nav-container {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Ensure the content spans full width */
+    width: 100%;
 }
 
-/* Left Navigation Links */
 .nav-left {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px;
 }
 
 .nav-left a {
     text-decoration: none;
-    color: #333; /* Text color */
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-left a:hover {
-    color: #ea7c6c; /* Coral hover effect */
+    color: #ea7c6c;
 }
 
-/* Right Content (Title and Subtitle) */
 .nav-right {
-    text-align: right; /* Align text to the right */
+    text-align: right;
 }
 
 .nav-right .site-title {
-    font-size: 1.5rem;
+    font-size: 1rem; /* Updated */
     color: #333;
     margin-bottom: 0.2rem;
 }
 
 .nav-right .subtitle {
-    font-size: 1rem;
+    font-size: 1rem; /* Updated */
     color: #555;
-}
-
-.work-experience-section {
-    margin: 2em auto;
-    padding: 2em;
-    max-width: 800px;
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.work-experience-section h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-/* Individual Job Entries */
-.job {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.job h3 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.job p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-.job ul {
-    list-style-type: disc;
-    margin: 1em 0 0 1.5em; /* Indent list items */
-    padding: 0;
-}
-
-.job ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.5em;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .work-experience-section {
-        padding: 1.5em;
-    }
-
-    .job h3 {
-        font-size: 1.2rem;
-    }
-
-    .job ul li {
-        font-size: 0.9rem;
-    }
 }
 
 /* Footer */
 .footer-bar {
-    background-color: #fee8a9; 
-    color: #0e0c0c; /* White text */
+    background-color: #fee8a9;
+    color: #0e0c0c;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
-    font-family: 'Roboto Slab', serif;
 }
 
 .footer-bar p {
     margin: 0.5em 1em;
-    font-size: 1.2em;
+    font-size: 1rem; /* Updated */
     font-weight: 500;
 }
 
@@ -145,146 +72,67 @@
     margin-top: 0.5em;
 }
 
-.social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-links img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Add a hover fade effect */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set the height of the body to fill the entire viewport */
-    margin: 0; /* Remove default margins */
-}
-
-main {
-    flex: 1; /* This makes the main content take up all available space */
-}
-
-/* General Section Styling */
+/* Work Experience Section */
 .content-section {
-    margin: 2em auto;
-    padding: 2em;
+    margin: 2rem auto;
+    padding: 1.5rem;
     max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.content-section {
-    font-size: 0.9rem; /* Apply smaller font globally */
-    line-height: 1.5;
-}
-
-
-
-
-/* Section Headings */
-.content-section h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* Paragraphs */
-.content-section p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Lists */
-.content-section ul {
-    list-style-type: disc;
-    margin: 1em 2em;
-    padding: 0;
-}
-
-body {
-    background-image: url('BG_exp.png'); /* Correct path and file name */
-    background-size: contain; /* Make the image cover the entire area */
-    background-repeat: no-repeat; /* Prevent the image from tiling */
-    background-position: center; /* Center the image in the viewport */
-}
-
-/* Work Experience Section */
-.work-experience-section {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for better readability */
-    padding: 2em;
-    max-width: 800px;
-    margin: 2em auto;
-    border-radius: 20px; /* Rounded corners for soft look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto Slab', serif; /* Soft and readable font */
-}
-
-/* Section Heading */
 .work-experience-section h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Updated */
+    color: #e2712f;
     text-align: center;
-    color: #d38520; /* Soft purple to match the background */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-/* Job Cards */
 .job {
-    background: rgba(255, 245, 245, 0.9); /* Light pink with transparency */
     margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Job Titles */
 .job h3 {
-    font-size: 1rem;
-    color: #d38520; /* A deeper pastel purple */
-    margin-bottom: 0.2rem;
+    font-size: 1rem; /* Updated */
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
-/* Job Details */
 .job p {
-    font-size: 0.8rem;
-    line-height: 1.2;
-    color: #4d4d4d; /* Neutral gray for readability */
+    font-size: 1rem; /* Updated */
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
-/* Job Responsibilities */
 .job ul {
     list-style-type: disc;
-    margin: 1rem 0 0 1.5rem;
-    padding: 0;
-    color: #333; /* Darker gray for contrast */
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 .job ul li {
-    font-size: 0.8rem;
     margin-bottom: 0.5rem;
-    color: #333;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .work-experience-section {
-        padding: 1.5em;
-    }
-
-    .job h3 {
-        font-size: 1rem;
-    }
-
-    .job ul li {
-        font-size: 0.9rem;
-    }
+/* Image Styling */
+.project-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
