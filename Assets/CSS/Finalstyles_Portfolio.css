@@ -324,23 +324,33 @@
     }
 }
 
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column; /* Stack items vertically */
+        margin-bottom: 2.5rem; /* Adjust spacing for smaller screens */
+    }
+
+    .timeline-date {
+        margin-bottom: 1rem; /* Add spacing below the date */
+    }
+
+    .timeline-content {
+        margin-left: 0; /* Remove left margin for better centering */
+        padding: 1.2rem; /* Reduce padding for compactness */
+    }
+}
+
 @media (max-width: 480px) {
-    /* General Adjustments */
-    body {
-        font-size: 12px; /* Reduce font size further */
-        padding: 0.5rem;
+    .timeline-item {
+        margin-bottom: 2rem; /* Further adjust spacing for small screens */
     }
 
-    /* Header */
-    .header-bar {
-        padding: 0.5rem;
+    .timeline-content {
+        padding: 1rem; /* Compact padding for small screens */
     }
 
-    .nav-left {
-        gap: 5px; /* Reduce spacing between links */
-    }
-
-    .nav-right .site-title {
-        font-size: 1rem; /* Further reduce font size */
+    .timeline-content p {
+        margin-bottom: 0.8rem; /* Adjust paragraph spacing */
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
     }
 }
