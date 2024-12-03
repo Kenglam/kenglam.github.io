@@ -164,6 +164,7 @@
     opacity: 0.8; /* Hover fade effect */
 }
 
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     /* General Adjustments */
@@ -292,3 +293,5 @@
         font-size: 25px; /* Icons for very small screens */
     }
 }
+
+
