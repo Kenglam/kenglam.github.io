@@ -303,3 +303,44 @@
         font-size: 1rem;
     }
 }
+@media (max-width: 480px) {
+    /* General Adjustments */
+    body {
+        font-size: 12px; /* Reduce font size further */
+        padding: 0.5rem;
+    }
+
+    /* Header */
+    .header-bar {
+        padding: 0.5rem;
+    }
+
+    .nav-left {
+        gap: 5px; /* Reduce spacing between links */
+    }
+
+    .nav-right .site-title {
+        font-size: 1rem; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* General Adjustments */
+    body {
+        font-size: 12px; /* Reduce font size further */
+        padding: 0.5rem;
+    }
+
+    /* Header */
+    .header-bar {
+        padding: 0.5rem;
+    }
+
+    .nav-left {
+        gap: 5px; /* Reduce spacing between links */
+    }
+
+    .nav-right .site-title {
+        font-size: 1rem; /* Further reduce font size */
+    }
+}
