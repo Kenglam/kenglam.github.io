@@ -287,3 +287,29 @@ main {
     flex: 1; /* This makes the main content take up all available space */
 }
 
+/* General Styling for Social Icons */
+.social-links i {
+    font-size: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Add space between icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Facebook Icon Styling */
+.social-links .fa-facebook-official {
+    color: #3b5998; /* Facebook blue color */
+}
+
+.social-links .fa-facebook-official:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
+}
+
+/* Instagram Icon Styling */
+.social-links .fa-instagram {
+    color: #E1306C; /* Instagram pink color */
+}
+
+.social-links .fa-instagram:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
+}
