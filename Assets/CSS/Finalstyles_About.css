@@ -68,14 +68,14 @@
 }
 
 .content-section h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #0f0e0e;
     text-align: center; /* Center-align headings */
 }
 
 .content-section p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1;
     color: #030303;
 }
@@ -88,7 +88,7 @@
 }
 
 .content-section ul li {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #0e0808;
     margin-bottom: 0.5em;
 }
@@ -266,10 +266,10 @@ main {
 
 /* Brief Summary Section */
 .summary-section {
-    background-color: #ffffff; /* Light Pink */
-    color: #333; /* Text color */
+    background-color: #ffffff; 
+    color: #0f0f0f; /* Text color */
     font-family: 'Roboto Slab', serif; /* Optional: Change to another font if needed */
-    font-size: 1rem; /* Adjust the size of the text */
+    font-size: 1.5rem; /* Adjust the size of the text */
     line-height: 1.6; /* Adjust spacing between lines */
     text-align: justify; /* Optional: Align the text for better readability */
     padding: 1.2rem; /* Add padding for spacing */
@@ -277,16 +277,43 @@ main {
 
 /* Heading Inside Brief Summary */
 .summary-section h2 {
-    font-size: 1rem; /* Adjust the font size for the heading */
+    font-size: 1.5rem; /* Adjust the font size for the heading */
     text-align: center; /* Center-align the heading */
-    color: #222; /* Adjust heading color */
+    color: #0f0f0f; /* Adjust heading color */
     font-weight: 700; /* Make the heading bold */
 }
 
 /* Paragraph Inside Brief Summary */
 .summary-section p {
-    font-size: 1rem; /* Adjust paragraph font size */
+    font-size: 1.5rem; /* Adjust paragraph font size */
     line-height: 1.8; /* Adjust line spacing for readability */
-    color: #444; /* Adjust text color */
+    color: #0f0f0f; /* Adjust text color */
     margin-top: 1rem; /* Add spacing between the heading and paragraph */
+}
+
+/* General Styling for Social Icons */
+.social-links i {
+    font-size: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Add space between icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Facebook Icon Styling */
+.social-links .fa-facebook-official {
+    color: #3b5998; /* Facebook blue color */
+}
+
+.social-links .fa-facebook-official:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
+}
+
+/* Instagram Icon Styling */
+.social-links .fa-instagram {
+    color: #E1306C; /* Instagram pink color */
+}
+
+.social-links .fa-instagram:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
 }
