@@ -338,3 +338,94 @@ main {
     }
 }
 
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px; /* Reduce overall font size */
+        padding: 10px;
+    }
+
+    /* Header */
+    .header-bar {
+        flex-direction: column; /* Stack header content */
+        align-items: center; /* Center items */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .site-title {
+        font-size: 1.2em; /* Reduce title size */
+    }
+
+    .subtitle {
+        font-size: 0.9em; /* Reduce subtitle size */
+    }
+
+    /* About Section */
+    .about-section {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center text */
+    }
+
+    .profile-pic {
+        width: 150px; /* Scale down the profile picture */
+        height: auto;
+    }
+
+    .intro-container h1 {
+        font-size: 2em; /* Smaller heading size */
+    }
+
+    .intro-container p {
+        font-size: 0.9em; /* Smaller paragraph text */
+    }
+
+    /* Buttons */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        gap: 15px; /* Adjust spacing */
+    }
+
+    .circle-btn {
+        width: 100px; /* Adjust button size */
+        height: 40px;
+        font-size: 0.9em; /* Smaller font */
+    }
+
+    /* Footer */
+    .footer-bar {
+        padding: 1em;
+    }
+
+    .social-links i {
+        font-size: 30px; /* Smaller icons */
+    }
+
+    /* Shapes */
+    .shape1, .shape2, .shape3, .shape4, .shape5, .shape6 {
+        display: none; /* Hide shapes for simplicity on smaller screens */
+    }
+}
+
+/* Extra Small Devices (e.g., phones),/* Adjustments for mobile responsiveness */ 
+@media (max-width: 480px) {
+    .header-bar {
+        padding: 5px;
+    }
+
+    .intro-container h1 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+
+    .circle-btn {
+        width: 80px; /* Smaller buttons */
+        height: 30px;
+        font-size: 0.8em;
+    }
+
+    .footer-bar {
+        font-size: 0.8em; /* Smaller footer text */
+    }
+}
