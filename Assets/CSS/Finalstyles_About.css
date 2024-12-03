@@ -318,78 +318,63 @@ main {
     opacity: 0.8; /* Hover fade effect */
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px; /* Scale down text globally */
+        padding: 1rem;
+    }
+
     /* Header */
     .header-bar {
-        flex-direction: column;
-        padding: 1rem; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack navigation and title */
+        align-items: center;
         text-align: center;
+        padding: 1rem;
     }
 
     .nav-left {
-        flex-direction: column; /* Stack navigation links */
-        gap: 10px; /* Reduce spacing between links */
+        flex-direction: column;
+        gap: 10px; /* Reduce spacing between navigation links */
     }
 
-    .nav-right {
-        text-align: center; /* Center the title and subtitle */
-    }
-
-    .nav-right .site-title {
-        font-size: 1.2rem; /* Reduce title size */
-    }
-
-    .nav-right .subtitle {
-        font-size: 1rem; /* Adjust subtitle size */
-    }
-
-    /* About Section */
+    /* Content Sections */
     .content-section {
-        margin: 1rem auto;
-        padding: 1rem; /* Reduce padding for smaller screens */
-        max-width: 90%; /* Use more screen width */
-        font-size: 1rem; /* Adjust text size */
+        max-width: 95%; /* Allow sections to take more screen space */
+        margin: 1rem auto; /* Center-align sections */
+        padding: 1rem;
     }
 
     .content-section h2 {
         font-size: 1.2rem; /* Reduce heading size */
     }
 
-    .content-section p {
-        font-size: 0.9rem; /* Reduce paragraph text size */
-    }
-
-    .content-section ul {
-        margin-left: 1rem; /* Adjust list indentation */
-    }
-
-    .content-section ul li {
-        font-size: 0.9rem; /* Smaller list text size */
+    .content-section p, .content-section ul li {
+        font-size: 0.9rem; /* Scale down text size */
     }
 
     /* Education Section */
     #education .row {
         flex-direction: column; /* Stack cards vertically */
-        gap: 2rem; /* Add space between cards */
+        gap: 1.5rem; /* Space between stacked cards */
     }
 
     #education .card {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; /* Full width for cards on smaller screens */
     }
 
     #education .card-title {
-        font-size: 1rem; /* Reduce card title size */
+        font-size: 1rem; /* Adjust card title size */
     }
 
     #education .card-text {
-        font-size: 0.8rem; /* Adjust text size for smaller screens */
+        font-size: 0.8rem; /* Reduce card text size */
     }
 
     /* Footer */
     .footer-bar {
-        padding: 1rem;
-        font-size: 0.9rem; /* Adjust footer text size */
+        padding: 1rem; /* Reduce padding */
+        font-size: 0.9rem; /* Adjust footer font size */
     }
 
     .social-links i {
@@ -404,34 +389,30 @@ main {
     }
 
     .nav-left {
-        gap: 5px; /* Minimize spacing */
+        gap: 5px; /* Minimal spacing */
     }
 
     .nav-right .site-title {
-        font-size: 1rem; /* Reduce further for smaller screens */
+        font-size: 1rem; /* Smaller title size */
     }
 
-    .nav-right .subtitle {
-        font-size: 0.8rem;
-    }
-
-    /* Content Sections */
+    /* Sections */
     .content-section {
-        padding: 0.5rem; /* Compact padding */
-        font-size: 0.8rem; /* Reduce font size */
+        padding: 0.5rem;
+        font-size: 0.8rem; /* Smaller font */
     }
 
     .content-section h2 {
-        font-size: 1rem; /* Smaller headings */
+        font-size: 1rem; /* Further reduce heading size */
     }
 
     .content-section ul li {
-        font-size: 0.8rem; /* Adjust bullet points */
+        font-size: 0.8rem; /* Smaller list item font size */
     }
 
     /* Education Section */
     #education .row {
-        gap: 1rem; /* Less spacing between cards */
+        gap: 1rem; /* Less space between cards */
     }
 
     #education .card {
@@ -452,6 +433,6 @@ main {
     }
 
     .social-links i {
-        font-size: 25px; /* Icons for very small screens */
+        font-size: 25px; /* Scale down icons */
     }
 }
