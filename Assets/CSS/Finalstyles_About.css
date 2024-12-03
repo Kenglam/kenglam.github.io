@@ -370,7 +370,7 @@ main {
 
     /* Education Section */
     #education .row {
-        flex-direction: row; /* Stack cards vertically */
+        flex-direction: column-reverse; /* Stack cards vertically */
         gap: 2rem; /* Add space between cards */
     }
 
