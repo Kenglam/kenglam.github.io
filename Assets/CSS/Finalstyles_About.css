@@ -318,118 +318,140 @@ main {
     opacity: 0.8; /* Hover fade effect */
 }
 
-/*new*/
-@media (max-width: 768px) { /* Tablets and smaller */
-    .nav-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic {
-        max-width: 150px; /* Reduce image size for mobile */
-    }
-
-    .button-container {
-        flex-wrap: wrap; /* Stack buttons for better alignment */
-    }
-
-    .intro-container h1 {
-        font-size: 1.8rem; /* Adjust heading size */
-    }
-
-    .footer-bar {
-        padding: 1rem; /* Reduce padding */
-    }
-}
-
-/* Adjustments for mobile responsiveness */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    /* General Adjustments */
-    body {
-        font-size: 14px; /* Reduce overall font size */
-        padding: 10px;
-    }
-
     /* Header */
     .header-bar {
-        flex-direction: column; /* Stack header content */
-        align-items: center; /* Center items */
-        padding: 10px;
+        flex-direction: column;
+        padding: 1rem; /* Adjust padding for smaller screens */
         text-align: center;
     }
 
-    .site-title {
-        font-size: 1.2em; /* Reduce title size */
+    .nav-left {
+        flex-direction: column; /* Stack navigation links */
+        gap: 10px; /* Reduce spacing between links */
     }
 
-    .subtitle {
-        font-size: 0.9em; /* Reduce subtitle size */
+    .nav-right {
+        text-align: center; /* Center the title and subtitle */
+    }
+
+    .nav-right .site-title {
+        font-size: 1.2rem; /* Reduce title size */
+    }
+
+    .nav-right .subtitle {
+        font-size: 1rem; /* Adjust subtitle size */
     }
 
     /* About Section */
-    .about-section {
-        flex-direction: column; /* Stack image and text vertically */
-        text-align: center; /* Center text */
+    .content-section {
+        margin: 1rem auto;
+        padding: 1rem; /* Reduce padding for smaller screens */
+        max-width: 90%; /* Use more screen width */
+        font-size: 1rem; /* Adjust text size */
     }
 
-    .profile-pic {
-        width: 150px; /* Scale down the profile picture */
-        height: auto;
+    .content-section h2 {
+        font-size: 1.2rem; /* Reduce heading size */
     }
 
-    .intro-container h1 {
-        font-size: 2em; /* Smaller heading size */
+    .content-section p {
+        font-size: 0.9rem; /* Reduce paragraph text size */
     }
 
-    .intro-container p {
-        font-size: 0.9em; /* Smaller paragraph text */
+    .content-section ul {
+        margin-left: 1rem; /* Adjust list indentation */
     }
 
-    /* Buttons */
-    .button-container {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
-        gap: 15px; /* Adjust spacing */
+    .content-section ul li {
+        font-size: 0.9rem; /* Smaller list text size */
     }
 
-    .circle-btn {
-        width: 100px; /* Adjust button size */
-        height: 40px;
-        font-size: 0.9em; /* Smaller font */
+    /* Education Section */
+    #education .row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 2rem; /* Add space between cards */
+    }
+
+    #education .card {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    #education .card-title {
+        font-size: 1rem; /* Reduce card title size */
+    }
+
+    #education .card-text {
+        font-size: 0.8rem; /* Adjust text size for smaller screens */
     }
 
     /* Footer */
     .footer-bar {
-        padding: 1em;
+        padding: 1rem;
+        font-size: 0.9rem; /* Adjust footer text size */
     }
 
     .social-links i {
-        font-size: 30px; /* Smaller icons */
-    }
-
-    /* Shapes */
-    .shape1, .shape2, .shape3, .shape4, .shape5, .shape6 {
-        display: none; /* Hide shapes for simplicity on smaller screens */
+        font-size: 30px; /* Scale down icons */
     }
 }
 
-/* Extra Small Devices (e.g., phones),/* Adjustments for mobile responsiveness */ 
 @media (max-width: 480px) {
+    /* Header */
     .header-bar {
-        padding: 5px;
+        padding: 0.5rem; /* Further reduce padding */
     }
 
-    .intro-container h1 {
-        font-size: 1.5em; /* Further reduce heading size */
+    .nav-left {
+        gap: 5px; /* Minimize spacing */
     }
 
-    .circle-btn {
-        width: 80px; /* Smaller buttons */
-        height: 30px;
-        font-size: 0.8em;
+    .nav-right .site-title {
+        font-size: 1rem; /* Reduce further for smaller screens */
     }
 
+    .nav-right .subtitle {
+        font-size: 0.8rem;
+    }
+
+    /* Content Sections */
+    .content-section {
+        padding: 0.5rem; /* Compact padding */
+        font-size: 0.8rem; /* Reduce font size */
+    }
+
+    .content-section h2 {
+        font-size: 1rem; /* Smaller headings */
+    }
+
+    .content-section ul li {
+        font-size: 0.8rem; /* Adjust bullet points */
+    }
+
+    /* Education Section */
+    #education .row {
+        gap: 1rem; /* Less spacing between cards */
+    }
+
+    #education .card {
+        padding: 0.5rem;
+    }
+
+    #education .card-title {
+        font-size: 0.9rem;
+    }
+
+    #education .card-text {
+        font-size: 0.7rem;
+    }
+
+    /* Footer */
     .footer-bar {
-        font-size: 0.8em; /* Smaller footer text */
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+
+    .social-links i {
+        font-size: 25px; /* Icons for very small screens */
     }
 }
