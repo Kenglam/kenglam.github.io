@@ -271,4 +271,35 @@
 }
 
 
+@media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px; /* Scale down text globally */
+        padding: 1rem;
+    }
 
+    /* Header */
+    .header-bar {
+        flex-direction: column; /* Stack navigation and title */
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack navigation items */
+        gap: 10px;
+    }
+
+    .nav-left {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    .nav-right .site-title {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    .nav-right .subtitle {
+        font-size: 1rem;
+    }
+}
