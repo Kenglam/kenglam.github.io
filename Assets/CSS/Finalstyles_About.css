@@ -401,6 +401,7 @@ main {
     /* Header */
     .header-bar {
         padding: 0.5rem; /* Further reduce padding */
+        flex-direction: column;
     }
 
     .nav-left {
