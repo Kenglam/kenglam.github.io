@@ -83,16 +83,7 @@
     text-decoration: none;
 }
 
-.social-links img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
 
-.social-links img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Add a hover fade effect */
-}
 
 
 .portfolio-content {
@@ -179,9 +170,9 @@
 /* Date Styling */
 .timeline-date {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    color: #cc952f;
+    color: #080807;
     background-color: #ffffff;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
@@ -217,9 +208,9 @@
     content: '';
     position: absolute;
     left: 50px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
+    top: 31px;
+    bottom: 61px;
+    width: 20px;
     background: #0f0f0e; /* Accent color */
 }
 
@@ -250,4 +241,34 @@
     color: #fff; /* White text inside the bar */
     text-align: center; /* Centers the percentage text */
 }
+
+
+/* General Styling for Social Icons */
+.social-links i {
+    font-size: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Add space between icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Facebook Icon Styling */
+.social-links .fa-facebook-official {
+    color: #3b5998; /* Facebook blue color */
+}
+
+.social-links .fa-facebook-official:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
+}
+
+/* Instagram Icon Styling */
+.social-links .fa-instagram {
+    color: #E1306C; /* Instagram pink color */
+}
+
+.social-links .fa-instagram:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    opacity: 0.8; /* Hover fade effect */
+}
+
+
 
