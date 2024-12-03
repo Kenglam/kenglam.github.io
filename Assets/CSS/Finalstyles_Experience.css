@@ -164,3 +164,131 @@
     opacity: 0.8; /* Hover fade effect */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    body {
+        font-size: 14px; /* Reduce font size globally */
+        padding: 1rem;
+    }
+
+    /* Header */
+    .header-bar {
+        flex-direction: column; /* Stack navigation and title */
+        padding: 1rem; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px; /* Space between stacked elements */
+    }
+
+    .nav-left {
+        flex-direction: column; /* Stack navigation links */
+        align-items: center; /* Center links */
+        gap: 10px; /* Reduce spacing between links */
+    }
+
+    .nav-right {
+        text-align: center; /* Center-align the title and subtitle */
+    }
+
+    .nav-right .site-title {
+        font-size: 1.2rem; /* Reduce title size */
+    }
+
+    .nav-right .subtitle {
+        font-size: 1rem; /* Reduce subtitle size */
+    }
+
+    /* Content Section */
+    .content-section {
+        max-width: 95%; /* Use more of the screen width */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .work-experience-section h2 {
+        font-size: 1.5rem; /* Scale down heading size */
+    }
+
+    .job h3 {
+        font-size: 1rem; /* Adjust job title size */
+    }
+
+    .job p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+        line-height: 1.4; /* Improve spacing for readability */
+    }
+
+    .job ul {
+        padding-left: 1rem; /* Adjust indentation */
+    }
+
+    .job ul li {
+        font-size: 0.9rem; /* Adjust list text size */
+        margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    .footer-bar {
+        padding: 1rem; /* Reduce padding */
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .social-links i {
+        font-size: 30px; /* Scale down icons */
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    .header-bar {
+        padding: 0.5rem; /* Further reduce padding */
+    }
+
+    .nav-left {
+        gap: 5px; /* Minimal spacing between links */
+    }
+
+    .nav-right .site-title {
+        font-size: 1rem; /* Further reduce title size */
+    }
+
+    .nav-right .subtitle {
+        font-size: 0.8rem;
+    }
+
+    /* Content Section */
+    .content-section {
+        padding: 0.5rem; /* Compact padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .work-experience-section h2 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .job h3 {
+        font-size: 0.9rem; /* Adjust job title size */
+    }
+
+    .job p {
+        font-size: 0.8rem; /* Reduce paragraph text size */
+        line-height: 1.3;
+    }
+
+    .job ul li {
+        font-size: 0.8rem; /* Adjust bullet points */
+    }
+
+    /* Footer */
+    .footer-bar {
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+
+    .social-links i {
+        font-size: 25px; /* Icons for very small screens */
+    }
+}
