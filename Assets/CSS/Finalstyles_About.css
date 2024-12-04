@@ -319,7 +319,7 @@ main {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     /* Header */
     .header-bar {
         flex-direction: column;
@@ -329,7 +329,7 @@ main {
 
     .nav-left {
         flex-direction: column; /* Stack navigation links */
-        gap: 10px; /* Reduce spacing between links */
+        gap: 1rem; /* Reduce spacing between links */
     }
 
     .nav-right {
@@ -393,11 +393,11 @@ main {
     }
 
     .social-links i {
-        font-size: 30px; /* Scale down icons */
+        font-size: 1.5rem; /* Scale down icons */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) { /* 480px */
     /* Header */
     .header-bar {
         padding: 0.5rem; /* Further reduce padding */
@@ -405,7 +405,7 @@ main {
     }
 
     .nav-left {
-        gap: 5px; /* Minimize spacing */
+        gap: 0.5rem; /* Minimize spacing */
     }
 
     .nav-right .site-title {
@@ -453,6 +453,6 @@ main {
     }
 
     .social-links i {
-        font-size: 25px; /* Icons for very small screens */
+        font-size: 1.25rem; /* Icons for very small screens */
     }
 }
