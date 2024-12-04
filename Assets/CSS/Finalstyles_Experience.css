@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.0625rem solid #ddd; /* 1px to rem */
 }
 
 .nav-container {
@@ -24,7 +24,7 @@
 
 .nav-left {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem; /* 20px to rem */
 }
 
 .nav-left a {
@@ -43,13 +43,13 @@
 }
 
 .nav-right .site-title {
-    font-size: 1rem; /* Updated */
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.125rem; /* 2px to rem */
 }
 
 .nav-right .subtitle {
-    font-size: 1rem; /* Updated */
+    font-size: 1rem;
     color: #555;
 }
 
@@ -58,24 +58,24 @@
     background-color: #fee8a9;
     color: #0e0c0c;
     text-align: center;
-    padding: 1em 0;
+    padding: 1rem 0;
     width: 100%;
 }
 
 .footer-bar p {
-    margin: 0.5em 1em;
-    font-size: 1rem; /* Updated */
+    margin: 0.5rem 1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .social-links {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 }
 
 .social-links img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 2.5rem; /* 40px to rem */
+    height: 2.5rem;
+    margin-right: 0.625rem; /* 10px to rem */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -88,14 +88,14 @@
 .content-section {
     margin: 2rem auto;
     padding: 1.5rem;
-    max-width: 800px;
+    max-width: 80rem; /* 800px to rem */
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* 10px to rem */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px and 10px to rem */
 }
 
 .work-experience-section h2 {
-    font-size: 2rem; /* Updated */
+    font-size: 2rem;
     color: #e2712f;
     text-align: center;
     margin-bottom: 1rem;
@@ -106,13 +106,13 @@
 }
 
 .job h3 {
-    font-size: 1rem; /* Updated */
+    font-size: 1rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .job p {
-    font-size: 1rem; /* Updated */
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -131,130 +131,129 @@
 .project-image {
     display: block;
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 21.25rem; /* 340px to rem */
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem; /* 10px to rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px and 8px to rem */
 }
 
 /* General Styling for Social Icons */
 .social-links i {
-    font-size: 40px; /* Adjust size as needed */
-    margin-right: 10px; /* Add space between icons */
+    font-size: 2.5rem; /* 40px to rem */
+    margin-right: 0.625rem; /* 10px to rem */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Facebook Icon Styling */
 .social-links .fa-facebook-official {
-    color: #3b5998; /* Facebook blue color */
+    color: #3b5998;
 }
 
 .social-links .fa-facebook-official:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Hover fade effect */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 /* Instagram Icon Styling */
 .social-links .fa-instagram {
-    color: #E1306C; /* Instagram pink color */
+    color: #E1306C;
 }
 
 .social-links .fa-instagram:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    opacity: 0.8; /* Hover fade effect */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
-
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px */
     /* General Adjustments */
     body {
-        font-size: 14px; /* Reduce font size globally */
+        font-size: 0.875rem; /* Adjust font size */
         padding: 1rem;
     }
 
     /* Header */
     .header-bar {
-        flex-direction: column; /* Stack navigation and title */
-        padding: 1rem; /* Adjust padding for smaller screens */
+        flex-direction: column;
+        padding: 1rem;
         text-align: center;
     }
 
     .nav-container {
         flex-direction: column;
-        gap: 10px; /* Space between stacked elements */
+        gap: 1rem;
     }
 
     .nav-left {
-        flex-direction: column; /* Stack navigation links */
-        align-items: center; /* Center links */
-        gap: 10px; /* Reduce spacing between links */
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
     .nav-right {
-        text-align: center; /* Center-align the title and subtitle */
+        text-align: center;
     }
 
     .nav-right .site-title {
-        font-size: 1.2rem; /* Reduce title size */
+        font-size: 1.2rem;
     }
 
     .nav-right .subtitle {
-        font-size: 1rem; /* Reduce subtitle size */
+        font-size: 1rem;
     }
 
     /* Content Section */
     .content-section {
-        max-width: 95%; /* Use more of the screen width */
-        padding: 1rem; /* Adjust padding */
+        max-width: 95%;
+        padding: 1rem;
     }
 
     .work-experience-section h2 {
-        font-size: 1.5rem; /* Scale down heading size */
+        font-size: 1.5rem;
     }
 
     .job h3 {
-        font-size: 1rem; /* Adjust job title size */
+        font-size: 1rem;
     }
 
     .job p {
-        font-size: 0.9rem; /* Adjust paragraph size */
-        line-height: 1.4; /* Improve spacing for readability */
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 
     .job ul {
-        padding-left: 1rem; /* Adjust indentation */
+        padding-left: 1rem;
     }
 
     .job ul li {
-        font-size: 0.9rem; /* Adjust list text size */
+        font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
 
     /* Footer */
     .footer-bar {
-        padding: 1rem; /* Reduce padding */
-        font-size: 0.9rem; /* Adjust text size */
+        padding: 1rem;
+        font-size: 0.9rem;
     }
 
     .social-links i {
-        font-size: 30px; /* Scale down icons */
-        margin-right: 8px;
+        font-size: 1.875rem; /* 30px to rem */
+        margin-right: 0.5rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) { /* 480px */
     /* Header */
     .header-bar {
-        padding: 0.5rem; /* Further reduce padding */
+        padding: 0.5rem;
     }
 
     .nav-left {
-        gap: 5px; /* Minimal spacing between links */
+        gap: 0.3125rem; /* 5px to rem */
     }
 
     .nav-right .site-title {
-        font-size: 1rem; /* Further reduce title size */
+        font-size: 1rem;
     }
 
     .nav-right .subtitle {
@@ -263,35 +262,33 @@
 
     /* Content Section */
     .content-section {
-        padding: 0.5rem; /* Compact padding */
-        font-size: 0.8rem; /* Smaller font size */
+        padding: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .work-experience-section h2 {
-        font-size: 1.2rem; /* Smaller heading size */
+        font-size: 1.2rem;
     }
 
     .job h3 {
-        font-size: 0.9rem; /* Adjust job title size */
+        font-size: 0.9rem;
     }
 
     .job p {
-        font-size: 0.8rem; /* Reduce paragraph text size */
+        font-size: 0.8rem;
         line-height: 1.3;
     }
 
     .job ul li {
-        font-size: 0.8rem; /* Adjust bullet points */
+        font-size: 0.8rem;
     }
 
     /* Footer */
     .footer-bar {
-        font-size: 0.8rem; /* Smaller footer text */
+        font-size: 0.8rem;
     }
 
     .social-links i {
-        font-size: 25px; /* Icons for very small screens */
+        font-size: 1.5625rem; /* 25px to rem */
     }
 }
-
-
