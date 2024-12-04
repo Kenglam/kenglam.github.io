@@ -1,3 +1,4 @@
+and this one : 
 /* General Reset */
 * {
     margin: 0;
@@ -409,23 +410,38 @@ main {
     }
 }
 
-/* Extra Small Devices (e.g., phones),/* Adjustments for mobile responsiveness */ 
-@media (max-width: 480px) {
+@media (max-width: 30rem) { /* 480px */
     .header-bar {
-        padding: 5px;
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
     }
 
     .intro-container h1 {
-        font-size: 1.5em; /* Further reduce heading size */
+        font-size: 1.5rem;
     }
 
     .circle-btn {
-        width: 80px; /* Smaller buttons */
-        height: 30px;
-        font-size: 0.8em;
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
     }
 
     .footer-bar {
-        font-size: 0.8em; /* Smaller footer text */
+        font-size: 0.8rem;
+    }
+
+    .social-links i {
+        font-size: 1.875rem; /* 30px to rem */
+    }
+
+    .shape1, .shape2, .shape3, .shape4, .shape5, .shape6 {
+        display: none; /* Hide shapes for smaller screens */
     }
 }
